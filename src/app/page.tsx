@@ -20,17 +20,6 @@ export default function Home() {
 
   return (
     <>
-      {loading && (
-        <div className="fixed h-screen w-full bg-white">
-          <div className="flex justify-center items-center h-full">
-            <img
-              className="h-16 w-16 "
-              src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif"
-              alt=""
-            />
-          </div>
-        </div>
-      )}
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">

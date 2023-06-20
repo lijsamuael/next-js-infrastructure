@@ -30,20 +30,3 @@ export function isTimestampWithinRange(
     Math.abs(currentTime.getTime() - storedTime.getTime()) / (1000 * 60);
   return diffInMinutes <= minutes;
 }
-
-export function fetchUsers() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/users")
-        .then((response) => response.json())
-        .then((json) => {
-          resolve(json);
-        })
-        .catch((error) => {
-          reject(error);
-        });
-    }, 2000);
-  });
-}
-
-
